@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<style type="text/css">
+		.main-div {
+			padding: 100px 0px;
+		}
+
+		.height-div {
+			height: 100vh;
+		}
+		
+		.image-animation img {
+		    -o-transition: 1s;
+		    -webkit-clip-path: inset(0% 100% 0% 0%);
+		    -webkit-transition: 1s;
+		    clip-path: inset(0% 100% 0% 0%);
+		    transition: 1s;
+		}
+
+		.image-animation.aos-animate img {
+			clip-path: inset(0% 0% 0% 0%);
+		}
+
+		.image-animation-right , .image-animation-bottom {
+			text-align: right;
+		}
+
+		.image-animation-right img {
+			clip-path: inset(0% 0% 0% 100%);
+			transition: 1s;
+		}
+
+		.image-animation-right.aos-animate img {
+			 clip-path: inset(0% 0% 0% 0%);
+		}
+
+		.image-animation-top img {
+			clip-path: inset(100% 0% 0% 0%);
+			transition: 1s;
+		}
+
+		.image-animation-top.aos-animate img {
+			 clip-path: inset(0% 0% 0% 0%);
+		}
+
+		.image-animation-bottom img {
+			clip-path: inset(0% 0% 100% 0%);
+			transition: 1s;
+		}
+
+		.image-animation-bottom.aos-animate img {
+			 clip-path: inset(0% 0% 0% 0%);
+		}
+
+
+	</style>
+</head>
+<body>
+	<div class="main-div">
+		<div class="height-div"></div>
+		<div class="image-animation" data-aos="fade-right">
+			<img src="image/sliding-doors_img.png">
+		</div>
+		<div class="image-animation-right" data-aos="fade-right">
+			<img src="image/sliding-doors_img.png">
+		</div>
+		<div class="image-animation-top" data-aos="fade-right">
+			<img src="image/sliding-doors_img.png">
+		</div>
+		<div class="image-animation-bottom" data-aos="fade-right">
+			<img src="image/sliding-doors_img.png">
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+  AOS.init();
+</script>
