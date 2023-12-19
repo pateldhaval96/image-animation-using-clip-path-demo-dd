@@ -1,0 +1,1 @@
+# image-animation-using-clip-path-demo-dd
